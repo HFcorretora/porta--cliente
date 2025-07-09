@@ -104,7 +104,8 @@
 
       <div class="flex items-center space-x-4">
         <a
-          href="#client-portal"
+          href="https://wa.me/556292454182?text=Iniciar%20atendimento"
+          target="_blank" rel="noopener noreferrer"
           class="hidden md:block bg-verde hover:bg-verdeClaro text-white px-4 py-2 rounded-full font-medium transition-colors"
           >Portal do Cliente</a
         >
@@ -155,28 +156,28 @@
               <h3 class="text-verde text-xl font-bold mb-4">Acesso Rápido</h3>
               <div class="space-y-4">
                 <a
-                  href="https://wa.me/556292454182?text=Emitir%202ª%20via%20de%20boleto"
+                  href="https://wa.me/556292454182?text=Iniciar%20atendimento"
                   class="block bg-verdeMuitoClaro hover:bg-verdeClaro text-verde p-4 rounded-lg font-medium transition-colors flex items-center"
                 >
                   <i class="fas fa-file-invoice-dollar mr-3 text-lg"></i>
                   Emitir 2ª via de boleto
                 </a>
                 <a
-                  href="https://wa.me/556292454182?text=Regularizar%20fatura%20em%20atraso"
+                  href="https://wa.me/556292454182?text=Iniciar%20atendimento"
                   class="block bg-verdeMuitoClaro hover:bg-verdeClaro text-verde p-4 rounded-lg font-medium transition-colors flex items-center"
                 >
                   <i class="fas fa-clock mr-3 text-lg"></i>
                   Regularizar fatura em atraso
                 </a>
                 <a
-                  href="https://wa.me/556292454182?text=Contratar%20novo%20plano"
+                  href="https://wa.me/556292454182?text=Iniciar%20atendimento"
                   class="block bg-verdeMuitoClaro hover:bg-verdeClaro text-verde p-4 rounded-lg font-medium transition-colors flex items-center"
                 >
                   <i class="fas fa-plus-circle mr-3 text-lg"></i>
                   Contratar novo plano
                 </a>
                 <a
-                  href="https://wa.me/556292454182?text=Atendimento%20ao%20Cliente"
+                  href="https://wa.me/556292454182?text=Iniciar%20atendimento"
                   class="block bg-verdeMuitoClaro hover:bg-verdeClaro text-verde p-4 rounded-lg font-medium transition-colors flex items-center"
                 >
                   <i class="fas fa-headset mr-3 text-lg"></i>
@@ -190,7 +191,7 @@
               <div
                 class="w-16 h-16 bg-verde rounded-full flex items-center justify-center"
               >
-                <a href="https://wa.me/556292454182" class="text-white text-2xl">
+                <a href="https://wa.me/556292454182" class="text-white text-2xl" target="_blank" rel="noopener noreferrer">
                   <i class="fab fa-whatsapp"></i>
                 </a>
               </div>
@@ -213,7 +214,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <a
-          href="https://wa.me/556292454182?text=Quero%202ª%20via%20de%20boleto"
+          
           class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform block"
         >
           <div
@@ -228,7 +229,7 @@
         </a>
 
         <a
-          href="https://wa.me/556292454182?text=Quero%20regularizar%20fatura%20em%20atraso"
+          
           class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform block"
         >
           <div
@@ -243,7 +244,7 @@
         </a>
 
         <a
-          href="https://wa.me/556292454182?text=Quero%20contratar%20um%20novo%20plano"
+          
           class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform block"
         >
           <div
@@ -258,7 +259,7 @@
         </a>
 
         <a
-          href="https://wa.me/556292454182?text=Preciso%20de%20atendimento"
+          
           class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform block"
         >
           <div
@@ -310,6 +311,7 @@
 
           <a
             href="https://wa.me/556292454182?text=Quero%20acessar%20o%20portal%20do%20cliente"
+            target="_blank" rel="noopener noreferrer"
             class="inline-block bg-verde hover:bg-verdeClaro text-white px-6 py-3 rounded-full font-bold transition-colors"
             >Acessar Portal do Cliente</a
           >
@@ -321,6 +323,7 @@
   <div class="fixed bottom-6 right-6 z-50">
     <a
       href="https://wa.me/556292454182"
+      target="_blank" rel="noopener noreferrer"
       class="whatsapp-btn bg-white text-green-600 w-14 h-14 rounded-full flex items-center justify-center shadow-lg text-2xl hover:text-white"
       ><i class="fab fa-whatsapp"></i
     ></a>
@@ -343,7 +346,7 @@
     <li><a href="#services" class="hover:underline scroll-link">2ª Via de Boleto</a></li>
     <li><a href="#services" class="hover:underline scroll-link">Faturas em Atraso</a></li>
     <li><a href="#services" class="hover:underline scroll-link">Contratar Plano</a></li>
-    <li><a href="#services" class="hover:underline scroll-link">Portal do Cliente</a></li>
+    <li><a href="#client-portal" class="hover:underline scroll-link">Portal do Cliente</a></li>
   </ul>
 </div>
 
@@ -388,39 +391,4 @@
         });
 
         card.addEventListener("mouseleave", function () {
-          this.style.transform = "translateY(0)";
-        });
-      });
-
-      const whatsappBtn = document.querySelector(".whatsapp-btn");
-
-      whatsappBtn.addEventListener("mouseenter", function () {
-        this.classList.add("animate-bounce");
-      });
-
-      whatsappBtn.addEventListener("mouseleave", function () {
-        this.classList.remove("animate-bounce");
-      });
-    });
-  </script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Scroll suave nos links com classe .scroll-link
-    document.querySelectorAll(".scroll-link").forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: "smooth"
-          });
-        }
-      });
-    });
-  });
-</script>
-
-</body>
-</html>
+          this.style.transform = "translateY
